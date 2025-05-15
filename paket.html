@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paket Wisata - Fikri Tour Guide  </title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('backgroundpaket.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #669e6e;(255, 255, 255, 0.95);
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #3b5d90;
+    
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #495057;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #091212;
+    }
+
+    main {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #091212;
+      margin-bottom: 30px;
+    }
+
+    .paket {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #091212;
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #495057;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(233, 236, 239, 0.95);
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Fikri Tour Guide      </h1>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="paket.html" class="active">Paket Wisata</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Paket Wisata Populer</h2>
+      <div class="paket">
+        <div class="card">
+          <h3>Paket Desa Wisata – Rp300.000</h3>
+          <p>Rasakan pengalaman otentik menjelajahi desa wisata dengan suasana khas lokal. Termasuk penginapan yang nyaman dan pemandu lokal yang ramah.</p>
+        </div>
+        <div class="card">
+          <h3>Paket Pantai (2 Orang) – Rp400.000</h3>
+          <p>Nikmati keindahan Pantai Binotik di Sulawesi Tengah! Termasuk dalam paket: makanan lezat dan perlengkapan diving untuk menyelami pesona bawah laut bersama pasangan atau sahabat.</p>
+        </div>
+        <div class="card">
+          <h3>Paket Danau (2 Orang) – Rp1.000.000</h3>
+          <p>elajahi Danau Paisupok yang eksotis dan tenang. Dalam paket ini sudah termasuk makanan lengkap dan penginapan nyaman untuk dua orang—cocok untuk liburan romantis atau petualangan santai.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy;  2025 Fikri Tour Guide. Jelajahi Bersama, Hak Anda Kami Hargai
+  </footer>
+</body>
+</html>

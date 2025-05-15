@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak - Fikri Tour Guide</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('backgroundkontak.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #343a40;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #669e6e;(255, 255, 255, 0.95);
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #3b5d90;
+      ;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #495057;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #0d6efd;
+    }
+
+    main {
+      padding: 60px 40px;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #091212;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0b5ed7;
+    }
+
+    .info {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #495057;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(233, 236, 239, 0.95);
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Fikri Tour Guide  </h1>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Hubungi Kami</h2>
+      <form>
+        <input type="text" placeholder="Nama Lengkap" required />
+        <input type="email" placeholder="Alamat Email" required />
+        <textarea rows="5" placeholder="Pesan Sekarang" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <div class="info">
+        <p><strong>Email:</strong> info@fikritourguide.com</p>
+        <p><strong>Telepon:</strong> +62 8135678900</p>
+        <p><strong>Alamat:</strong> Jl. Dodung No. 10, Banggai</p>
+        <p><strong>Instagram</strong> @Fikritourguide</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy;  2025 Fikri Tour Guide. Jelajahi Bersama, Hak Anda Kami Hargai
+  </footer>
+</body>
+</html>
